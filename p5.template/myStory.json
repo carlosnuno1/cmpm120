@@ -1,0 +1,199 @@
+{
+    "Title": "Cave Adventure: The Search for Ancient Treasure",
+    "Credits": "Created by Carlos Nuno (carnuno@ucsc.edu).",
+    "InitialLocation": "Entrance",
+    "Locations": {
+        "Entrance": {
+            "KeyRoom": "no",
+            "Amount": "three",
+            "keyFound": "no",
+            "Body": "Entrance of the Cave. Where will go?",
+            "Choices": [
+                {
+                    "Text": "Left",
+                    "Target": "First Left"
+                },
+                {
+                    "Text": "Forward",
+                    "Target": "Forward"
+                },
+                {
+                    "Text": "Right",
+                    "Target": "First Right"
+                }
+            ]
+        },
+        "First Left": {
+            "KeyRoom": "no",
+            "Amount": "three",
+            "keyFound": "no",
+            "Body": "Another Fork. Left or right?",
+            "Choices": [
+                {
+                    "Text": "Go Left",
+                    "Target": "Left Left"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Entrance"
+                },
+                {
+                    "Text": "Go Right",
+                    "Target": "Left Right"
+                }
+            ]
+        },
+        "Forward": {
+            "KeyRoom": "no",
+            "keyFound": "no",
+            "Amount": "two",
+            "Body": "There's a box in this room.",
+            "Choices": [
+                {
+                    "Text": "Inspect Box",
+                    "Target": "Inspect Box"
+                },
+                {
+                    "Text": "Go back",
+                    "Target": "Entrance"
+                }
+            ]
+        },
+        "First Right": {
+            "KeyRoom": "no",
+            "keyFound": "no",
+            "Amount": "three",
+            "Body": "Left or Right?",
+            "Choices": [
+                {
+                    "Text": "Go Left",
+                    "Target": "Second Left"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Entrance"
+                },
+                {
+                    "Text": "Go Right",
+                    "Target": "Second Right"
+                }
+            ]
+        },
+        "Left Left": {
+            "KeyRoom": "no",
+            "keyFound": "no",
+            "Amount": "one",
+            "Body": "Its a dead end.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "First Left"
+                }
+            ]
+        },
+        "Left Right": {
+            "KeyRoom": "yes",
+            "Amount": "three",
+            "keyFound": "no",
+            "Body": "There's a door.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "First Left"
+                },
+                {
+                    "Text": "Open Door",
+                    "Target": "Door is locked"
+                },
+                {
+                    "Text": "Open Door",
+                    "Target": "Treasure Room"
+                }
+            ]
+        },
+        "Inspect Box": {
+            "KeyRoom": "no",
+            "keyFound": "yes",
+            "Amount": "one",
+            "Body": "You found a key. What does it unlock?",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Entrance"
+                }
+            ]
+        },
+        "Second Right": {
+            "KeyRoom": "no",
+            "Amount": "one",
+            "keyFound": "no",
+            "Body": "Dead end",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "First Right"
+                }
+            ]
+        },
+        "Second Left": {
+            "KeyRoom": "no",
+            "Amount": "two",
+            "keyFound": "no",
+            "Body": "There's a small box.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "First Right"
+                },
+                {
+                    "Text": "Open Box",
+                    "Target": "Open Box"
+                }
+            ]
+        },
+        "Open Box": {
+            "KeyRoom": "no",
+            "Amount": "two",
+            "keyFound": "no",
+            "Body": "You found a lamp.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Second Left"
+                },
+                {
+                    "Text": "Light Lamp",
+                    "Target": "Light Lamp"
+                }
+            ]
+        },
+        "Light Lamp": {
+            "KeyRoom": "no",
+            "Amount": "one",
+            "keyFound": "no",
+            "Body": "Now you have a lamp.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "First Right"
+                }
+            ]
+        },
+        "Treasure Room": {
+            "KeyRoom": "no",
+            "Body": "YOU FOUND THE TREASURE!!! YAY!!!"
+        },
+        "Door is locked": {
+            "KeyRoom": "no",
+            "Amount": "one",
+            "keyFound": "no",
+            "Body": "The door is locked.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Left Right"
+                }
+            ]
+        }
+    }
+}
